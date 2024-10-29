@@ -42,7 +42,7 @@ header {
 	transition-duration: 1s;
 }
 
-#main {
+.main {
 	background-image: url("grunge-outline.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
