@@ -55,6 +55,10 @@ header {
 	margin: 1% 0%;
 }
 
+.main a:link, .main a:visited {
+	color: #FF6F01;
+}
+
 #images {
 	text-align: center;
 }
