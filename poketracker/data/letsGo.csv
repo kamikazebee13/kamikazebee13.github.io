@@ -1,0 +1,154 @@
+Regional Dex #,National Dex #,Image,Pokemon,Evolution Mechanics,Primary Location
+0001,0001,letsGo\bulbasaur.avif,Bulbasaur,,Viridian Forest
+0002,0002,letsGo\ivysaur.avif,Ivysaur,Level 16,
+0003,0003,letsGo\venusaur.avif,Venusaur,Level 32,
+0004,0004,letsGo\charmander.avif,Charmander,,"Route 3, Route 4 & Rock Tunnel"
+0005,0005,letsGo\charmeleon.avif,Charmeleon,Level 16,
+0006,0006,letsGo\charizard.avif,Charizard,Level 36,Rare Spawn Throughout Kanto
+0007,0007,letsGo\squirtle.avif,Squirtle,,"Route 24, Route 25 & Seaform Islands"
+0008,0008,letsGo\wartortle.avif,Wartortle,Level 16,
+0009,0009,letsGo\blastoise.avif,Blastoise,Level 36,
+0010,0010,letsGo\caterpie.avif,Caterpie,,"Route 2, Viridian Forest"
+0011,0011,letsGo\metapod.avif,Metapod,Level 7,Viridian Forest
+0012,0012,letsGo\butterfree.avif,Butterfree,Level 10,Viridian Forest
+0013,0013,letsGo\weedle.avif,Weedle,,"Route 2, Viridian Forest"
+0014,0014,letsGo\kakuna.avif,Kakuna,Level 7,Viridian Forest
+0015,0015,letsGo\beedrill.avif,Beedrill,Level 10,Viridian Forest
+0016,0016,letsGo\pidgey.avif,Pidgey,,Found Throughout Kanto
+0017,0017,letsGo\pidgeotto.avif,Pidgeotto,Level 18,Found Throughout Kanto
+0018,0018,letsGo\pidgeot.avif,Pidgeot,Level 36,Found Throughout Kanto
+0019,0019,letsGo\rattata.avif,Rattata,,Found Throughout Kanto
+0020,0020,letsGo\raticate.avif,Raticate,Level 20,Found Throughout Kanto
+0021,0021,letsGo\spearow.avif,Spearow,,"Route 3, 4, 9, 10, 22 & 23"
+0022,0022,letsGo\fearow.avif,Fearow,Level 20,"Route 3, 4, 9, 10, 22 & 23"
+0023,0023,letsGo\ekans.avif,Ekans,,Route 3 & 4*
+0024,0024,letsGo\arbok.avif,Arbok,Level 22,
+0025,0025,letsGo\pikachu.avif,Pikachu,,Viridian Forest
+0026,0026,letsGo\raichu.avif,Raichu,Thunder Stone,
+0027,0027,letsGo\sandshrew.avif,Sandshrew,,Route 3 & Route 4
+0028,0028,letsGo\sandslash.avif,Sandslash,Level 22,
+0029,0029,letsGo\nidoran-f.avif,NidoranF,,"Route 9, 10, 22 & 23"
+0030,0030,letsGo\nidorina.avif,Nidorina,Level 16,"Route 9, 10 & 23"
+0031,0031,letsGo\nidoqueen.avif,Nidoqueen,Moon Stone,Route 23
+0032,0032,letsGo\nidoran-m.avif,NidoranM,,"Route 9, 10, 22 & 23"
+0033,0033,letsGo\nidorino.avif,Nidorino,Level 16,"Route 9, 10 & 23"
+0034,0034,letsGo\nidoking.avif,Nidoking,Moon Stone,Route 23
+0035,0035,letsGo\clefairy.avif,Clefairy,,Mt Moon
+0036,0036,letsGo\clefable.avif,Clefable,Moon Stone,Mt Moon
+0037,0037,letsGo\vulpix.avif,Vulpix,,"Route 5, 6, 7 & 8"
+0038,0038,letsGo\ninetales.avif,Ninetales,Fire Stone,Route 7 & Route 8
+0039,0039,letsGo\jigglypuff.avif,Jigglypuff,,"Route 5, 6, 7 & 8"
+0040,0040,letsGo\wigglytuff.avif,Wigglytuff,Moon Stone,
+0041,0041,letsGo\zubat.avif,Zubat,,"Diglett's Cave, Mt Moon, Cerulean Cave, Rock Tunnel, Pokemon Tower, Seafoam Islands, Victory Road"
+0042,0042,letsGo\golbat.avif,Golbat,Level 22,"Cerulean Cave, Rock Tunnel, Pokemon Tower, Seafoam Islands, Victory Road"
+0043,0043,letsGo\oddish.avif,Oddish,,Found Throughout Kanto
+0044,0044,letsGo\gloom.avif,Gloom,Level 21,"Route 12, 13, 14, 15 & 21"
+0045,0045,letsGo\vileplume.avif,Vileplume,Leaf Stone,Route 21
+0046,0046,letsGo\paras.avif,Paras,,Mt Moon
+0047,0047,letsGo\parasect.avif,Parasect,Level 24,
+0048,0048,letsGo\venonat.avif,Venonat,,"Route 14, 15, 24 & 25"
+0049,0049,letsGo\venomoth.avif,Venomoth,Level 31,Route 14 & Route 15
+0050,0050,letsGo\diglett.avif,Diglett,,Diglett's Cave
+0051,0051,letsGo\dugtrio.avif,Dugtrio,Level 26,Diglett's Cave
+0052,0052,letsGo\meowth.avif,Meowth,,Route 24 & Route 25
+0053,0053,letsGo\persian.avif,Persian,Level 28,Vermillion City
+0054,0054,letsGo\psyduck.avif,Psyduck,,"Route 4, 5, 6, 17, 24, 25 & Cerulean Cave"
+0055,0055,letsGo\golduck.avif,Golduck,Level 33,Cerulean Cave
+0056,0056,letsGo\mankey.avif,Mankey,,Route 3 & Route 4
+0057,0057,letsGo\primeape.avif,Primeape,Level 28,
+0058,0058,letsGo\growlithe.avif,Growlithe,,"Route 5, 6, 7 & 8"
+0059,0059,letsGo\arcanine.avif,Arcanine,Fire Stone,Route 7 & Route 8
+0060,0060,letsGo\poliwag.avif,Poliwag,,"Route 22, 23, 25 & Cerulean Cave"
+0061,0061,letsGo\poliwhirl.avif,Poliwhirl,Level 25,"Route 22, 23, 25 & Cerulean Cave"
+0062,0062,letsGo\poliwrath.avif,Poliwrath,Water Stone,Cerulean Cave
+0063,0063,letsGo\abra.avif,Abra,,"Route 5, 6, 7 & 8"
+0064,0064,letsGo\kadabra.avif,Kadabra,Level 16,Route 7 & Route 8
+0065,0065,letsGo\alakazam.avif,Alakazam,Trade,
+0066,0066,letsGo\machop.avif,Machop,,Rock Tunnel & Victory Road
+0067,0067,letsGo\machoke.avif,Machoke,Level 28,Victory Road
+0068,0068,letsGo\machamp.avif,Machamp,Trade,
+0069,0069,letsGo\bellsprout.avif,Bellsprout,,Found Throughout Kanto
+0070,0070,letsGo\weepinbell.avif,Weepinbell,Level 21,"Route 12, 13, 14, 15 & 21"
+0071,0071,letsGo\victreebel.avif,Victreebel,Leaf Stone,Route 21
+0072,0072,letsGo\tentacool.avif,Tentacool,,Found Throughout Kanto
+0073,0073,letsGo\tentacruel.avif,Tentacruel,Level 30,Found Throughout Kanto
+0074,0074,letsGo\geodude.avif,Geodude,,"Mt Moon, Cerulean Cave, Rock Tunnel & Victory Road"
+0075,0075,letsGo\graveler.avif,Graveler,Level 25,"Cerulean Cave, Rock Tunnel & Victory Road"
+0076,0076,letsGo\golem.avif,Golem,Trade,
+0077,0077,letsGo\ponyta.avif,Ponyta,,Route 17
+0078,0078,letsGo\rapidash.avif,Rapidash,Level 40,Route 17
+0079,0079,letsGo\slowpoke.avif,Slowpoke,,Seaform Islands
+0080,0080,letsGo\slowbro.avif,Slowbro,Level 37,Seaform Islands
+0081,0081,letsGo\magnemite.avif,Magnemite,,Power Plant
+0082,0082,letsGo\magneton.avif,Magneton,Level 30,Power Plant
+0083,0083,letsGo\farfetchd.avif,Farfetchd,,Route 12 & 13
+0084,0084,letsGo\doduo.avif,Doduo,,"Route 16, 17 & 18"
+0085,0085,letsGo\dodrio.avif,Dodrio,Level 31,"Route 16, 17 & 18"
+0086,0086,letsGo\seel.avif,Seel,,Seaform Islands
+0087,0087,letsGo\dewgong.avif,Dewgong,Level 34,Seaform Islands
+0088,0088,letsGo\grimer.avif,Grimer,,Power Plant & Pokemon Mansion
+0089,0089,letsGo\muk.avif,Muk,Level 38,Power Plant & Pokemon Mansion
+0090,0090,letsGo\shellder.avif,Shellder,,Seaform Islands
+0091,0091,letsGo\cloyster.avif,Cloyster,Water Stone,Seaform Islands
+0092,0092,letsGo\gastly.avif,Gastly,,Pokemon Tower
+0093,0093,letsGo\haunter.avif,Haunter,Level 25,Pokemon Tower
+0094,0094,letsGo\gengar.avif,Gengar,Trade,
+0095,0095,letsGo\onix.avif,Onix,,"Mt Moon, Rock Tunnel & Victory Road"
+0096,0096,letsGo\drowzee.avif,Drowzee,,Route 11
+0097,0097,letsGo\hypno.avif,Hypno,Level 26,Evolve Drowzee
+0098,0098,letsGo\krabby.avif,Krabby,,"Route 10, 12 & 13"
+0099,0099,letsGo\kingler.avif,Kingler,Level 28,Route 12 & 13
+0100,0100,letsGo\voltorb.avif,Voltorb,,Power Plant
+0101,0101,letsGo\electrode.avif,Electrode,Level 30,Power Plant
+0102,0102,letsGo\exeggcute.avif,Exeggcute,,Route 23
+0103,0103,letsGo\exeggutor.avif,Exeggutor,Leaf Stone,Route 23
+0104,0104,letsGo\cubone.avif,Cubone,,Rock Tunnel & Pokemon Tower
+0105,0105,letsGo\marowak.avif,Marowak,Level 28,
+0106,0106,letsGo\hitmonlee.avif,Hitmonlee,,Victory Road
+0107,0107,letsGo\hitmonchan.avif,Hitmonchan,,Victory Road
+0108,0108,letsGo\lickitung.avif,Lickitung,,Cerulean Cave
+0109,0109,letsGo\koffing.avif,Koffing,,Power Plant & Pokemon Mansion
+0110,0110,letsGo\weezing.avif,Weezing,Level 35,Power Plant & Pokemon Mansion
+0111,0111,letsGo\rhyhorn.avif,Rhyhorn,,"Cerulean Cave, Rock Tunnel & Victory Road"
+0112,0112,letsGo\rhydon.avif,Rhydon,Level 42,Cerulean Cave & Victory Road
+0113,0113,letsGo\chansey.avif,Chansey,,Found Throughout Kanto
+0114,0114,letsGo\tangela.avif,Tangela,,Route 21
+0115,0115,letsGo\kangaskhan.avif,Kangaskhan,,Rock Tunnel
+0116,0116,letsGo\horsea.avif,Horsea,,Route 12 & Route 13
+0117,0117,letsGo\seadra.avif,Seadra,Level 32,Route 12 & Route 13
+0118,0118,letsGo\goldeen.avif,Goldeen,,Route 6
+0119,0119,letsGo\seaking.avif,Seaking,Level 33,Route 6
+0120,0120,letsGo\staryu.avif,Staryu,,"Route 18, 19 & 21"
+0121,0121,letsGo\starmie.avif,Starmie,Water Stone,"Route 18, 19 & 21"
+0122,0122,letsGo\mr-mime.avif,Mr Mime,,Route 11
+0123,0123,letsGo\scyther.avif,Scyther,,Route 14 & Route 15
+0124,0124,letsGo\jynx.avif,Jynx,,Seaform Islands
+0125,0125,letsGo\electabuzz.avif,Electabuzz,,Power Plant
+0126,0126,letsGo\magmar.avif,Magmar,,Pokemon Mansion
+0127,0127,letsGo\pinsir.avif,Pinsir,,Route 14 & Route 15
+0128,0128,letsGo\tauros.avif,Tauros,,Route 14 & Route 15
+0129,0129,letsGo\magikarp.avif,Magikarp,,Found Throughout Kanto
+0130,0130,letsGo\gyarados.avif,Gyarados,Level 20,Route 20
+0131,0131,letsGo\lapras.avif,Lapras,,Route 19 & Route 20
+0132,0132,letsGo\ditto.avif,Ditto,,Cerulean Cave & Pokemon Mansion
+0133,0133,letsGo\eevee.avif,Eevee,,Route 17
+0134,0134,letsGo\vaporeon.avif,Vaporeon,Water Stone,
+0135,0135,letsGo\jolteon.avif,Jolteon,Thunder Stone,
+0136,0136,letsGo\flareon.avif,Flareon,Fire Stone,
+0137,0137,letsGo\porygon.avif,Porygon,,Route 7
+0138,0138,letsGo\omanyte.avif,Omanyte,,Revive Helix Fossil
+0139,0139,letsGo\omastar.avif,Omastar,Level 40,
+0140,0140,letsGo\kabuto.avif,Kabuto,,Revive Dome Fossil
+0141,0141,letsGo\kabutops.avif,Kabutops,Level 40,
+0142,0142,letsGo\aerodactyl.avif,Aerodactyl,,Revive Old Amber
+0143,0143,letsGo\snorlax.avif,Snorlax,,"Route 12, 16 & Cerulean Cave"
+0144,0144,letsGo\articuno.avif,Articuno,,Seaform Islands & Rare Spawns
+0145,0145,letsGo\zapdos.avif,Zapdos,,Power Plant & Rare Spawns
+0146,0146,letsGo\moltres.avif,Moltres,,Victory Road & Rare Spawns
+0147,0147,letsGo\dratini.avif,Dratini,,Route 10
+0148,0148,letsGo\dragonair.avif,Dragonair,Level 30,Route 10
+0149,0149,letsGo\dragonite.avif,Dragonite,Level 55,Rare Spawn Throughout Kanto
+0150,0150,letsGo\mewtwo.avif,Mewtwo,,Cerulean Cave
+0151,0151,letsGo\mew.avif,Mew,,Poké Ball Plus
+0152,0808,letsGo\meltan.avif,Meltan,,Pokémon Go Mystery Box
+0153,0809,letsGo\melmetal.avif,Melmetal,400 Meltan Candy,
