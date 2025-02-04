@@ -168,3 +168,22 @@ input[type="checkbox"] {
 	height: 20px;
 	width: 20px;
 }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3D0000; /* Dark red like the header */
+    color: #FFCC00; /* Yellow text */
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #0075BE; /* Blue links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
