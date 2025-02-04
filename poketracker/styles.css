@@ -177,6 +177,7 @@ footer {
     color: #FFCC00; /* Yellow text */
     font-size: 14px;
     margin-top: 20px;
+    min-height: 50px;
     border-top: 15px solid #FFCC00; /*Yellow border */
 	border-image: url('img/gsBall_Border.png') 30 round;
 }
