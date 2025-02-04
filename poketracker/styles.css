@@ -139,6 +139,7 @@ table {
 	width: 100$;
 	border-collapse: collapse;
 	margin-top: 20px;
+	margin-bottom: 50px;
 	background-color: #3D0000;
 	border-radius: 10px;
 	overflow: hidden;
