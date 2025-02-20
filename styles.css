@@ -1,126 +1,262 @@
+/* General Reset */
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+/* Color Scheme */
+:root {
+    --bg-dark: #1a1a1a;
+    --text-light: #f0f0f0;
+	--text-dark: #1a1a1a;
+    --highlight-orange: #ff8800;
+    --accent-blue: #0097b2;
+}
+
+/* Body Styling */
 body {
-	background-image: url("orange.avif");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-color: #FBE6BF;
-	color: #262626;
-	margin: 0% 5%;	
-	font-size: 20px;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px;
 }
 
+/* Header */
 header {
-	background-image: url("black-feathers.webp");
-	background-color: #262626;
-	color: #FF9F01;
-	padding: 1% 5%;
-	border-radius: 1px 1px 5px 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+	box-shadow: 0 4px 15px var(--highlight-orange);
 }
 
-#navigation {
-	display: block;
-	padding: 3px;
-	background: rgba(38, 38, 38, 0.5);
-	text-align: right;
+/* Navigation */
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--highlight-orange);
+	margin-right: auto;
 }
 
-#navigation a:link, a:visited, a:visited {
-	background-color: #FBE6BF;
-	color: #262626;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative; /* Needed for dropdown positioning */
+}
+
+/* Styling for Navigation Links */
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 1.1em;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-orange);
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+}
+
+/* Hide dropdown content initially */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    left: 0;
+}
+
+/* Style for dropdown links */
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    color: var(--text-light);
+    padding: 12px 16px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background: var(--highlight-orange);
+    color: #fff;
+}
+
+/* Show dropdown when hovering over parent */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Feather Animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Feather Styling */
+.feather {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    opacity: 0;
+    animation: fall 5s linear infinite;
+	pointer-events: none;
+}
+
+.feather:nth-child(7)  { left: 5%; animation-duration: 6s; animation-delay: 3s; }
+.feather:nth-child(8)  { left: 7%; animation-duration: 8s; animation-delay: 2.5s; }
+.feather:nth-child(1)  { left: 10%; animation-duration: 6s; animation-delay: 1s; }
+.feather:nth-child(9)  { left: 13%; animation-duration: 7s; animation-delay: 3.5s; }
+.feather:nth-child(2)  { left: 15%; animation-duration: 8s; animation-delay: 2s; }
+.feather:nth-child(3)  { left: 20%; animation-duration: 7s; animation-delay: 0s; }
+.feather:nth-child(4)  { left: 75%; animation-duration: 9s; animation-delay: 3s; }
+.feather:nth-child(5)  { left: 80%; animation-duration: 6.5s; animation-delay: 1.5s; }
+.feather:nth-child(10) { left: 83%; animation-duration: 9s; animation-delay: 1s; }
+.feather:nth-child(6)  { left: 87%; animation-duration: 7.5s; animation-delay: 2.5s; }
+.feather:nth-child(11) { left: 90%; animation-duration: 6.5s; animation-delay: 3s; }
+.feather:nth-child(12) { left: 92%; animation-duration: 7.5s; animation-delay: 1.5s; }
+
+/* Hero Section */
+#hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#hero img {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 5px double var(--highlight-orange);
+    margin-bottom: 20px;
+}
+
+#hero button {
+    background: var(--highlight-orange);
+    color: var(--text-dark);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#hero button:hover {
+    background: var(--accent-blue);
+}
+
+/* Sections */
+section {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+	box-shadow: 0 0 20px var(--highlight-orange);
+}
+
+#capture {
+    max-width: 100%;  /* Prevents the image from exceeding its container */
+    width: 80%;       /* Adjust this value to control the size */
+    height: auto;     /* Maintains aspect ratio */
+    display: block;   /* Ensures no inline spacing issues */
+    margin: 0 auto;   /* Centers the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+
+h2 {
+    color: var(--highlight-orange);
+    margin-bottom: 15px;
+}
+
+div {
+	margin: 20px auto;
+}
+
+/* Buttons */
+a {
+    background: var(--highlight-orange);
+    color: var(--text-dark);
+    font-size: 1em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 	text-decoration: none;
-	border: 3px ridge #FF9F01;
-	border-radius: 3px;
-	padding: 4px;
 }
 
-#navigation a:hover {
-	background-color: #FF9F01;
-	font-size: 150%;
-	transition-duration: 1s;
+a:hover {
+    background: var(--accent-blue);
 }
 
-.main {
-	background-image: url("paper-texture.avif");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top;
-	background-color: rgba(250, 248, 238, 0.7);
-	background-blend-mode: lighten;
-	border-radius: 3px;
-	padding: 1% 3%;
-	margin: 1% 0%;
-}
-
-.main a:link, .main a:visited {
-	color: #FF6F01;
-}
-
-#images {
-	text-align: center;
-}
-
-.column {
-	float: left;
-	padding: 10px;
-}
-
-.side {
-	width: 10%;
-	margin: 4% 0%;
-}
-
-.middle {
-	width: 80%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.2center {
-	display: inline-block;
-	margin-left: auto;
-	margin-left: auto;
-}
-
-.largerFont {
-}
-
-@media screen and (max-width: 600px) {
-	.column {
-		width: 100%;
-	}
-}
-
+/* Footer */
 footer {
-	background-image: url("black-feathers.webp");
-	background-color: #262626;
-	color: #FF9F01;
-	padding: 1% 5%;
-	border-radius: 5px 5px 1px 1px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
 
-table.footer, th.footer, tr.footer, td.footer {
-	border: 3px solid transparent;
-	border-collapse: collapse;
-	padding: 0% 3%;
-	width: 60%;
-	text-align: left;
+footer p {
+    color: var(--text-light);
 }
 
-a.footer:link, a.footer:visited {
-	color: #FBE6BF;
-	text-decoration: none;
+footer .socials a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+    color: var(--highlight-orange);
 }
