@@ -1,0 +1,289 @@
+html {
+		height: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(135deg, #DCECC9, #4A7C59);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border: 50px solid transparent;
+	border-image: url('imgs/vine_border.png') 150 round;
+	margin: 0;
+	color: #5A3921;
+}
+
+header {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #FFF4E6;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#headLabels {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically align elements */
+    gap: 20px; /* Add spacing between elements */
+    width: 100%;
+}
+
+#headLabels h3 {
+    max-width: 60%; /* Adjust as needed */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    text-overflow: ellipsis; /* Add '...' if content overflows */
+}
+
+#mote_img {
+	background: none;
+	border: none;
+	box-shadow: none;
+	max-width: 5%;
+	height: auto;
+	vertical-align: middle;
+}
+
+body img {
+	flex: 0 1 auto;
+	text-align: center;
+	max-width: 25%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.leftMenu {
+	background: none;
+	display: block;
+	align-items: center;
+	flex: 0 0 auto;
+	text-align: center;
+	margin: 20px 0;
+}
+
+button#purchaseSeeds {
+	background: none;
+	border: none;
+	max-width: 500px;
+	margin: 5px 0;
+	padding: 5px 0;
+	position: relative;
+}
+
+button#purchaseSeeds .tooltip {
+	visibility: hidden;
+	width: 120px;
+	background-color: #FFF4E6;
+	color: #5A3921;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+  
+	/* Position the tooltip */
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 8px;
+	z-index: 1;
+}
+
+button#purchaseSeeds .tooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* Align the tail just below the tooltip */
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #FFF4E6 transparent; /* Triangle pointing up */
+}
+
+button#purchaseSeeds:hover .tooltip {
+	visibility: visible;
+}
+
+button#purchaseSeeds img {
+	background: #F4D06F;
+	border: 2px solid #5A3921;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+button#purchaseSeeds:hover img {
+	transform: scale(1.05);
+}
+
+button#purchaseSeeds:active img {
+	transform: scale(1.2);
+}
+
+.garden {
+	background-image: url(imgs/soil_texture.png);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+	flex: 0 1 auto;
+	max-width: 25%;
+	height: auto;
+	margin: 0 25px;
+}
+
+.plots {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	margin: 20px auto;
+	max-width: 300px;
+}
+
+.plot {
+    width: 80px;
+    height: 80px;
+    background-image: url(imgs/plot.png);
+	background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	position: relative;
+}
+
+.plot .tooltip {
+	visibility: hidden;
+	width: 120px;
+	background-color: #FFF4E6;
+	color: #5A3921;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+  
+	/* Position the tooltip */
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 8px;
+	z-index: 1;
+}
+
+.plot .tooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* Align the tail just below the tooltip */
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #FFF4E6 transparent; /* Triangle pointing up */
+}
+
+.plot:hover .tooltip {
+	visibility: visible;
+}
+
+.labels p {
+	background: #4A7C59;
+	color: #FFF4E6;
+	display: inline-block;
+	padding: 5px 25px;
+	border-radius: 5px;
+}
+
+#expandGarden {
+	background: #FFF4E6;
+	color: #5A3921;
+	font-weight: bold;
+	font-size: 18px;
+	margin: 5px 0;
+	padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s;
+}
+
+#expandGarden:hover {
+	background: #81B29A;
+	color: #FFFFFF;
+	transform: scale(1.05);
+}
+
+#expandGarden:active {
+	transform: scale(1.2);
+}
+
+.rightMenu {
+	background: none;
+	display: block;
+	align-items: center;
+	flex: 0 0 auto;
+	text-align: center;
+	margin: 20px 0;
+}
+
+button#sellHerbs {
+	background: none;
+	border: none;
+	max-width: 500px;
+	margin: 5px 0;
+	padding: 5px 0;
+	position: relative;
+}
+
+button#sellHerbs .tooltip {
+	visibility: hidden;
+	width: 120px;
+	background-color: #FFF4E6;
+	color: #5A3921;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+  
+	/* Position the tooltip */
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 8px;
+	z-index: 1;
+}
+
+button#sellHerbs .tooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; /* Align the tail just below the tooltip */
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #FFF4E6 transparent; /* Triangle pointing up */
+}
+
+button#sellHerbs:hover .tooltip {
+	visibility: visible;
+}
+
+button#sellHerbs img {
+	background: #F4D06F;
+	border: 2px solid #5A3921;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+button#sellHerbs:hover img {
+	transform: scale(1.05);
+}
+
+button#sellHerbs:active img {
+	transform: scale(1.2);
+}
