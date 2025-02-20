@@ -109,8 +109,8 @@ nav ul li a:hover {
 
 /* Hover effect for dropdown links */
 .dropdown-content a:hover {
-    background: var(--highlight-orange);
-    color: #fff;
+    background: var(--accent-blue);
+    color: var(--highlight-orange);
 }
 
 /* Show dropdown when hovering over parent */
@@ -147,11 +147,11 @@ nav ul li a:hover {
 .feather:nth-child(2)  { left: 15%; animation-duration: 8s; animation-delay: 2s; }
 .feather:nth-child(3)  { left: 20%; animation-duration: 7s; animation-delay: 0s; }
 .feather:nth-child(4)  { left: 75%; animation-duration: 9s; animation-delay: 3s; }
-.feather:nth-child(5)  { left: 80%; animation-duration: 6.5s; animation-delay: 1.5s; }
-.feather:nth-child(10) { left: 83%; animation-duration: 9s; animation-delay: 1s; }
-.feather:nth-child(6)  { left: 87%; animation-duration: 7.5s; animation-delay: 2.5s; }
-.feather:nth-child(11) { left: 90%; animation-duration: 6.5s; animation-delay: 3s; }
-.feather:nth-child(12) { left: 92%; animation-duration: 7.5s; animation-delay: 1.5s; }
+.feather:nth-child(5)  { left: 78%; animation-duration: 6.5s; animation-delay: 1.5s; }
+.feather:nth-child(10) { left: 81%; animation-duration: 9s; animation-delay: 1s; }
+.feather:nth-child(6)  { left: 84%; animation-duration: 7.5s; animation-delay: 2.5s; }
+.feather:nth-child(11) { left: 87%; animation-duration: 6.5s; animation-delay: 3s; }
+.feather:nth-child(12) { left: 90%; animation-duration: 7.5s; animation-delay: 1.5s; }
 
 /* Hero Section */
 #hero {
@@ -235,6 +235,7 @@ a {
 
 a:hover {
     background: var(--accent-blue);
+	color: var(--highlight-orange);
 }
 
 /* Footer */
