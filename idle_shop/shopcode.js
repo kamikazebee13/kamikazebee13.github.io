@@ -4,6 +4,14 @@ let moteCount = 10;
 let plotPlanted = {};
 const seedPrice = 3;
 
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
 function purchaseSeeds() {
 	if (moteCount >= seedPrice) {
 		moteCount -=seedPrice;
@@ -25,16 +33,3 @@ function plantSeed(plotId) {
 		}
 	}
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const popup = document.getElementById('welcome-popup');
-    const closeButton = document.getElementById('close-popup');
-
-    // Show the pop-up on page load
-    popup.style.display = 'flex';
-
-    // Close the pop-up when the button is clicked
-    closeButton.addEventListener('click', () => {
-        popup.style.display = 'none';
-    });
-});
