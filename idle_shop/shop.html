@@ -7,68 +7,73 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div id="overlay">
-		<div id="overlay_content">
-			<h3>Welcome to your Cozy Magic Shop!</h3>
-			<p>Click on the Leaf below to get started collecting herbs. Sell herbs to earn Mote Stones which you can use to purchase upgrades.</p>
-		</div>
-	</div>
 	<header>
 		<h1>Cozy Magic Shop</h1>
 		<div id="headLabels">
 			<h3>Magic Starts with a Single Leaf</h3>
-			<h3 style="text-align:right"><img style="padding-right: 5px" id="mote_img" src="imgs/mote_stone.png" alt="Mote Stones: "><span id="moteCount">10</span></h3>
 		</div>
 	</header>
+	<div id="overlay">
+		<div id="overlay_content">
+			<h3>Welcome to your Cozy Magic Shop!</h3>
+			<p>Click on the <b>leaf</b> below to get started collecting herbs. <b>Sell</b> herbs to earn <b>Mote Stones</b> which you can use to purchase upgrades.</p>
+			<button onclick="off()">Got it!</button>
+		</div>
+	</div>
 	<div class="container">
 		<div class="leftMenu">
-			<button id="purchaseSeeds" onclick="purchaseSeeds()">
-				<img id="seeds_img" src="imgs/seeds.png" alt="Purchase Seeds">
-				<span class="tooltip">Purchase Seeds</span>
-			</button>
+			<h3>Inventory</h3>
+			<p><img src="imgs/mote_stone.png" style="max-width: 30px">Mote Stones: <span id="moteCount">0</span></p>
+			<p><img src="imgs/verdleaf.png" style="max-width: 30px">Verdleaf: <span id="verdleafCount">0</span></p>
+			<p><img src="imgs/azurethorn.png" style="max-width: 30px">Azurethorn: <span id="azurethornCount">0</span></p>
 		</div>
-		<div class="garden">
-			<div class="plots">
-				<div class="plot" id="plot1" onclick="plantSeed(1)">					
-					<span class="tooltip">Click to Plant A Seed</span>
-				</div>
-				<div class="plot" id="plot2" onclick="plantSeed(2)">					
-					<span class="tooltip">Click to Plant A Seed</span>
-				</div>
-				<div class="plot" id="plot3" onclick="plantSeed(3)">					
-					<span class="tooltip">Click to Plant A Seed</span>
-				</div>
-				<div class="plot" id="plot4" onclick="plantSeed(4)">					
-					<span class="tooltip">Click to Plant A Seed</span>
-				</div>
-				<div class="plot" id="plot5" onclick="plantSeed(5)">					
-					<span class="tooltip">Click to Plant A Seed</span>
-				</div>
-				<div class="plot" id="plot6" onclick="plantSeed(6)">					
-					<span class="tooltip">Click to Plant A Seed</span>
-				</div>
-				<div class="plot" id="plot7" onclick="plantSeed(7)">					
-					<span class="tooltip">Click to Plant A Seed</span>
-				</div>
-				<div class="plot" id="plot8" onclick="plantSeed(8)">					
-					<span class="tooltip">Click to Plant A Seed</span>
-				</div>
-				<div class="plot" id="plot9" onclick="plantSeed(9)">					
-					<span class="tooltip">Click to Plant A Seed</span>
-				</div>
-			</div>
-			<div class="labels">
-				<p>Seeds: <span id="seedCount">0</span></p>
-				<p>Herbs: <span id="herbCount">0</span></p>
-			</div>
-			<br>
-			<button id="expandGarden" onclick="expandGarden()">Expand Garden</button>
+		<div class="centerMenu">
+			<div>
+				<p id="message"></p>
+			<div>
 		</div>
 		<div class="rightMenu">
-			<button id="sellHerbs" onclick="sellHerbs()">
-				<img id="herb_img" src="imgs/herb_leaf.png" alt="Sell Herbs">
-				<span class="tooltip">Sell Herbs</span>
-			</button>
+			<div id="verdleaf">
+				<button id="collectHerb" onclick="incrementHerbCount('verdleaf')">
+					<img id="verdleaf_img" src="imgs/verdleaf.png" alt="Collect verdleaf">
+					<span class="tooltip">Click to collect verdleaf.</span>
+				</button>
+			
+				<button id="sellHerbs" onclick="sellHerbs('verdleaf')">
+					Sell verdleaf. (<span id="verdleafCost">2</span> Mote Stones)
+				</button>
+				
+				<button id="upgradeHerbCost" onclick="upgradeHerbCost('verdleaf')">
+					Better quality verdleaf. (<span id="verdleafCostUpgrade">75</span>)				
+				</button>
+				
+				<button id="upgradeHerbCollect" onclick="upgradeHerbCollect('verdleaf')">
+					Higher verdleaf yield. (<span id="verdleafCollectUpgrade">105</span>)			
+				</button>
+			</div>
+			
+			<div id="purchaseAzurethorn">
+				<button id="purchaseHerb" onclick="purchaseHerb('azurethorn')">Purchase Azurethorn herb (500 motes)</button>
+			</div>
+			
+			<div id="azurethorn">
+				<button id="collectHerb" onclick="incrementHerbCount('azurethorn')">
+					<img id="azurethorn_img" src="imgs/azurethorn.png" alt="Collect azurethorn">
+					<span class="tooltip">Click to collect azurethorn.</span>
+				</button>
+				
+				<button id="sellHerbs" onclick="sellHerbs('azurethorn')">
+					Sell azurethorn. (<span id="azurethornCost">7</span> Mote Stones)
+				</button>
+					
+				<button id="upgradeHerbCost" onclick="upgradeHerbCost('azurethorn')">
+					Better quality azurethorn. (<span id="azurethornCostUpgrade">375</span>)
+				</button>
+					
+				<button id="upgradeHerbCollect" onclick="upgradeHerbCollect('azurethorn')">
+					Higher azurethorn yield. (<span id="azurethornCollectUpgrade">495</span>)
+				</button>
+			</div>
 		</div>
 	</div>
 	<script src="shopcode.js"></script>
