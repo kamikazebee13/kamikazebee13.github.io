@@ -238,6 +238,23 @@ a:hover {
 	color: var(--highlight-orange);
 }
 
+.inTextLink {
+	background: var(--highlight-orange);
+	color: var(--text-dark);
+	font-size: .75em;
+	padding: 2px 5px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	text-decoration: none;
+}
+
+.inTextLink:hover {
+    background: var(--accent-blue);
+	color: var(--highlight-orange);
+}
+
 /* Footer */
 footer {
     background: rgba(0, 0, 0, 0.8);
