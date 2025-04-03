@@ -1,3 +1,70 @@
+/* Decision Tree Page */
+#quiz-container {
+  max-width: 400px;
+  margin: 2em auto;
+  font-family: Arial;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+.fade-out {
+	opacity: 0;
+}
+button.quiz-btn {
+    background: var(--highlight-orange);
+    color: var(--text-dark);
+    font-size: 1.1em;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
+    min-width: 150px;
+}
+
+.quiz-btn:hover {
+    background: var(--accent-blue);
+    color: var(--highlight-orange);
+}
+
+#restart-btn {
+	margin: 20px auto 0 auto;
+}
+
+#platformList, #platformList th, #platformList td {
+	border: 1px solid var(--text-light);
+	border-collapse: collapse;
+}
+
+#platformList {
+	margin-top: 10px;
+}
+
+#platformList th {
+	padding: 10px;
+	background-color: var(--highlight-orange);
+	color: var(--text-dark);
+}
+
+#platformList td {
+	text-align: left;
+	padding: 5px;
+	color: var(--text-dark);
+}
+
+.cellName {
+	color: var(--highlight-orange);
+}
+
+.rowOrange {
+	background-color: var(--pastel-orange);
+}
+
+.rowBlue {
+	background-color: var(--pastel-blue);
+}
+
 /* General Reset */
 * {
     margin: 0;
@@ -13,6 +80,8 @@
 	--text-dark: #1a1a1a;
     --highlight-orange: #ff8800;
     --accent-blue: #0097b2;
+	--pastel-orange: #FFD9B3;
+	--pastel-blue: #B3E6F2;
 }
 
 /* Body Styling */
@@ -53,6 +122,20 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: auto;
+}
+
+ul.promptLists {
+	list-style: disc outside;
+	padding: 15px;
+	text-align: left;
+}
+
+ul.promptLists li {	
+	margin-bottom: 10px;
+}
+
+ul.promptLists li::marker {
+	color: var(--highlight-orange);
 }
 
 nav ul {
@@ -176,21 +259,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-#hero button {
-    background: var(--highlight-orange);
-    color: var(--text-dark);
-    font-size: 1.2em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-#hero button:hover {
-    background: var(--accent-blue);
-}
-
 /* Sections */
 section {
     margin: 50px auto;
@@ -220,6 +288,28 @@ div {
 	margin: 20px auto;
 }
 
+/* Infobox */
+.infotext {
+	width: 60%;
+	float: left;
+	text-align: left;
+}
+
+.infobox {
+	width: 300px;
+	float: right;
+	margin-left: 20px;
+}
+
+.infobox-img {
+    width: 150px !important;
+	height: auto;
+	display: block;
+    border-radius: 50%;
+    border: 5px double var(--highlight-orange);
+    margin: 0 auto 20px auto;
+}
+
 /* Buttons */
 a {
     background: var(--highlight-orange);
@@ -239,20 +329,20 @@ a:hover {
 }
 
 .inTextLink {
-	background: var(--highlight-orange);
-	color: var(--text-dark);
-	font-size: .75em;
+	background-color: transparent;
+	color: var(--highlight-orange);
+	font-size: 1em;
 	padding: 2px 5px;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
 	transition: background 0.3s ease;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .inTextLink:hover {
-    background: var(--accent-blue);
-	color: var(--highlight-orange);
+	background-color: transparent;
+	color: var(--accent-blue);
 }
 
 /* Footer */
