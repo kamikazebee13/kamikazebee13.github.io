@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 	
 	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 	<div class="feather-container">
@@ -24,22 +25,12 @@
 		<img src="imgs/feather3.png" class="feather">
 	</div>
 	<header>
-		<nav>
-			<ul>
-				<li class="logo">Morgen Long</li>
-				<li><a href="index.html">Home</a></li>
-				<li class="dropdown">
-					<a href="projects.html" class="dropbtn">Projects ▾</a>
-					<ul class="dropdown-content">
-						<li><a href="copywriting.html">Copywriting</a></li>
-						<li><a href="contentwriting.html">Content Writing</a></li>
-						<li><a href="creativewriting.html">Creative Writing</a></li>
-						<li><a href="websites.html">Website Projects</a></li>
-					</ul>
-				</li>
-				<li><a href="about.html">About</a></li>
-			</ul>
-		</nav>
+		<div id="nav-placeholder"></div>
+		<script>
+			$(function(){
+				$("#nav-placeholder").load("../nav.html");
+			});
+		</script>
 	</header>
 	<section id="idle_shop">
 		<img id="capture" src="imgs/idle_shop_capture.png">
