@@ -7,34 +7,42 @@
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 	
 	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
   <header>
-		<nav>
-			<ul>
-				<li class="logo">Morgen Long</li>
-				<li><a href="index.html">Home</a></li>
-				<li class="dropdown">
-					<a href="projects.html" class="dropbtn">Projects ▾</a>
-					<ul class="dropdown-content">
-						<li><a href="copywriting.html">Copywriting</a></li>
-						<li><a href="contentwriting.html">Content Writing</a></li>
-						<li><a href="creativewriting.html">Creative Writing</a></li>
-						<li><a href="websites.html">Website Projects</a></li>
-						<li><a href="decisiontree.html">Decision Tree</a></li>
-					</ul>
-				</li>
-				<li><a href="about.html">About</a></li>
-			</ul>
-		</nav>
+		<div id="nav-placeholder"></div>
+		<script>
+		$(function(){
+			$("#nav-placeholder").load("../nav.html");
+		});
+		</script>
 	</header>
   <section>
     <h1>Website Platform Decision Tree</h1>
     <p>Please answer the questions to determine the best website platform for you. Or, you can take a look at the list of websites below for further information on each one.</p>
   </section>
   <section>
-    <h1>List of Recommended Websites:</h1>
+	<div id="quiz-container">
+		<p id="question-text"></p>
+		<div id="answers"></div>
+		<button id="restart-btn" class="quiz-btn" style="display: none;">Start Over</button>
+	</div>
   </section>
+  <section>
+    <h1>List of Recommended Websites:</h1>
+	<table id="platformList">
+		<tr><th>Platform</th><th>Cost</th><th>Website Builder</th><th>Description</th></tr>
+		<tr class="rowOrange"><td>GoDaddy</td><td>$9.99-20.99</td><td>Yes</td><td>A hosting platform that allows users to upload their own files or use their website builder to create a site.</td></tr>
+		<tr class="rowBlue"><td>Github Pages</td><td>Free</td><td>Yes</td><td>An open source platform that allows you to create, edit, and upload your own HTML, CSS, or JS files.</td></tr>
+		<tr class="rowOrange"><td>Weebly</td><td>Free with paid options</td><td>Yes</td><td>Web hosting with simplified block based design tools to allow even beginners designers to create professional looking websites. For more advanced web designers, it does offer the option to add custom elements to the HTML and CSS.</td></tr>
+		<tr class="rowBlue"><td>Wix</td><td>Free with paid options</td><td>Yes</td><td>Web hosting with more advanced drag and drop tools, allowing even more customization for those who prefer being able to manipulate the smallest details.</td></tr>
+		<tr class="rowOrange"><td>Google Sites</td><td>Free</td><td>Yes</td><td>A simple, template based website builder provided for free through the suite of Google Applications.</td></tr>
+		<tr class="rowBlue"><td>Wordpress</td><td>Free but minimal functionality</td><td>Yes</td><td>A mostly text based platform with a variety of templates to choose from. The free version has minimal functionality, but there are paid options to increase your options.</td></tr>
+		<tr class="rowOrange"><td>Squarespace</td><td>Free with paid options</td><td>Yes</td><td>Mostly advertised for ecommerce, but it's also a simple template based platform that has drag and drop features to easily add images, videos, and text to your website.</td></tr>
+	</table>
+  </section>
+  <script src="decisiontree.js"></script>
 </body>
 <footer>
 	<p>&copy; 2025 Morgen Long. All rights reserved.</p>
