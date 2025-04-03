@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 	
 	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 	<div class="feather-container">
@@ -24,23 +25,12 @@
 		<img src="imgs/feather3.png" class="feather">
 	</div>
 	<header>
-		<nav>
-			<ul>
-				<li class="logo">Morgen Long</li>
-				<li><a href="index.html">Home</a></li>
-				<li class="dropdown">
-					<a href="projects.html" class="dropbtn">Projects ▾</a>
-					<ul class="dropdown-content">
-						<li><a href="copywriting.html">Copywriting</a></li>
-						<li><a href="contentwriting.html">Content Writing</a></li>
-						<li><a href="creativewriting.html">Creative Writing</a></li>
-						<li><a href="websites.html">Website Projects</a></li>
-						<li><a href="decisiontree.html">Decision Tree</a></li>
-					</ul>
-				</li>
-				<li><a href="about.html">About</a></li>
-			</ul>
-		</nav>
+		<div id="nav-placeholder"></div>
+		<script>
+			$(function(){
+				$("#nav-placeholder").load("../nav.html");
+			});
+		</script>
 	</header>
 	<section>
 		<h2>Profile: Paul Castle</h2>
@@ -55,10 +45,10 @@
 	<section>
 		<h2>Additional Writing projects</h2>
 		<p>This is a list of writing projects I'm working on. Feel free to use these as prompts for your own portfolio!</p>
-		<ul>
-			<li>Explainer Blog Post: "HTML Basics Every Writer Should Know."</li>
-			<li>SEO Article: Pick a keyword phrase and write a blog post that's structured for web.</li>
-			<li>Newsletter Sample: Create a 1-page mock newsletter for: a fictional creative writing club, a student-run tech initiative, or a library-themed lifestyle brand.</li>
+		<ul class="promptLists">
+			<li><a class="inTextLink">Explainer Blog Post:</a> "HTML Basics Every Writer Should Know."</li>
+			<li><a class="inTextLink">SEO Article:</a> Pick a keyword phrase and write a blog post that's structured for web.</li>
+			<li><a class="inTextLink">Newsletter Sample:</a> Create a 1-page mock newsletter for: a fictional creative writing club, a student-run tech initiative, or a library-themed lifestyle brand.</li>
 		</ul>
 	</section>
 </body>
