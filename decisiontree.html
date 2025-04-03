@@ -43,6 +43,16 @@
 	</table>
   </section>
   <script src="decisiontree.js"></script>
+  	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const hamburger = document.getElementById("hamburger");
+			const navLinks = document.getElementById("nav-links");
+
+			hamburger.addEventListener("click", function () {
+				navLinks.classList.toggle("show");
+			});
+		});
+	</script>
 </body>
 <footer>
 	<p>&copy; 2025 Morgen Long. All rights reserved.</p>
