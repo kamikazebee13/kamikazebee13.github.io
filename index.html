@@ -54,6 +54,16 @@
 		<p>I'm a writer, web designer, reader, gamer, cat mom. The list goes on and on. I like creating. Creating things is fun to me. My goal is to have a career that I find enjoyable and earn enough money for my boyfriend and myself to live comfortably. My dream is to become an author.</p><br>
 		<a href="about.html">Click here to learn more.</a>
 	</section>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const hamburger = document.getElementById("hamburger");
+			const navLinks = document.getElementById("nav-links");
+
+			hamburger.addEventListener("click", function () {
+				navLinks.classList.toggle("show");
+			});
+		});
+	</script>
 </body>
 <footer>
 	<p>&copy; 2025 Morgen Long. All rights reserved.</p>
