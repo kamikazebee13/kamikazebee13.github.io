@@ -38,7 +38,11 @@ button.quiz-btn {
 }
 
 #platformList {
-	margin-top: 10px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+  margin-top: 5%;
 }
 
 #platformList th {
@@ -71,6 +75,63 @@ button.quiz-btn {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  header, footer {
+    padding: 15px;
+  }
+
+  section {
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  #hero h1 {
+    font-size: 1.8em;
+  }
+
+  #hero p {
+    font-size: 1em;
+  }
+
+  .infotext,
+  .infobox {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .feather {
+    width: 40px;
+  }
+
+  #platformList {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  #platformList th, #platformList td {
+    font-size: 0.85em;
+    padding: 6px;
+  }
+
+  a {
+    display: inline-block;
+    margin: 5px 0;
+  }
+
+  .quiz-btn {
+    font-size: 1em;
+    padding: 8px 15px;
+    min-width: 120px;
+  }
 }
 
 /* Color Scheme */
