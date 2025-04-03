@@ -77,6 +77,13 @@ button.quiz-btn {
     font-family: Arial, sans-serif;
 }
 
+.hamburger {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: var(--highlight-orange);
+}
+
 @media (max-width: 768px) {
   body {
     padding: 0;
@@ -85,6 +92,31 @@ button.quiz-btn {
 
   header, footer {
     padding: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 10px 0;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   section {
