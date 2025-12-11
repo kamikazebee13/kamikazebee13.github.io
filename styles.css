@@ -1,3 +1,51 @@
+/* Color Scheme */
+:root {
+    --bg-dark: #1a1a1a;
+    --text-light: #f0f0f0;
+	--text-dark: #1a1a1a;
+    --highlight-orange: #ff8800;
+    --accent-blue: #0097b2;
+	--pastel-orange: #FFD9B3;
+	--pastel-blue: #B3E6F2;
+}
+
+/* Interactive Short Story*/
+#sceneContainer {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+#scene {
+	text-align: left;
+	background: var(--bg-dark);
+	padding: 5%;
+	border-radius: 5px;
+}
+
+#optionsContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.choice {
+	background: var(--bg-dark);
+	color: var(--text-light);
+	font-weight: bold;
+	padding: 2% 0%;
+	border-radius: 5px;
+	box-shadow: 0 2px var(--bg-dark);
+	transition: 0.1s;
+}
+
+.choice:hover {
+	cursor: pointer;
+	box-shadow: none;
+	transform: translateY(1px);
+}
+
 /* Interactive Timeline */
 .timeline {
 	position: relative;
@@ -280,17 +328,6 @@ button.quiz-btn {
     padding: 8px 15px;
     min-width: 120px;
   }
-}
-
-/* Color Scheme */
-:root {
-    --bg-dark: #1a1a1a;
-    --text-light: #f0f0f0;
-	--text-dark: #1a1a1a;
-    --highlight-orange: #ff8800;
-    --accent-blue: #0097b2;
-	--pastel-orange: #FFD9B3;
-	--pastel-blue: #B3E6F2;
 }
 
 /* Body Styling */
@@ -577,4 +614,3 @@ footer .socials a {
 footer .socials a:hover {
     color: var(--highlight-orange);
 }
-
