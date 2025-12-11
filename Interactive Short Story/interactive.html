@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Interactive Short Story</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="A short interactive story from the perspective of an insomniac.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="../styles.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<audio id="bgAudio" src="arctura_rain_loop.mp3" loop></audio>
+	
+	<header>
+		<div id="nav-placeholder"></div>
+		<script>
+			$(function(){
+				$("#nav-placeholder").load("../nav.html");
+			});
+		</script>
+	</header>
+	
+	<section>
+		<h2>An Interactive Short Story</h2>
+		<p>A short interactive story from the perspective of an insomniac. <strong>Use the buttons below the text</strong> to make your choices to advance the story. <strong>Refresh</strong> the page to start over at any point. Have fun!</p>
+	</section>
+	
+	<section class="interactive" style="background-image: url('rainyartist91.png'); background-position: center; background-size: cover;">
+		<div id="sceneContainer">
+			<p id="scene">This is an interactive short story from the perspective of an insomniac. While none of the events in this short story are real, they are based off of my own experiences with insomnia. Sometimes just playing or reading something calming like this has been enough to help put me to sleep. I don't know if this will help anyone else, but my fingers are crossed for you my insomniac friends.
+			<br><br>
+			Click the start button below and relax.</p>
+		</div>
+		<div id="optionsContainer">
+			<button class="choice" onclick="advanceStory(this)">Start</button>
+		</div>
+	</section>
+	<section>
+		<p>Image placeholder sourced from: <a href="https://snipstock.com/rainyartist91/" style="background-color: transparent; color: var(--highlight-orange); cursor: default; transition: none; text-decoration: underline;">rainyartist91 on SnipStock</a></p>
+		<p>Music is sourced from: <a href="https://freesound.org/people/Arctura/sounds/39824/" style="background-color: transparent; color: var(--highlight-orange); cursor: default; transition: none; text-decoration: underline;">Arctura on Freesound.</a></p>
+	</section>
+	
+	<script src="interactive.js"></script>
+</body>
+<footer>
+	<p>&copy; 2025 Morgen Long. All rights reserved.</p>
+</footer>
+</html>
