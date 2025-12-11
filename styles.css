@@ -443,7 +443,7 @@ nav ul li a:hover {
 }
 
 /* Show dropdown when hovering over parent */
-.dropdown:hover .dropdown-content:hover {
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -614,4 +614,5 @@ footer .socials a {
 footer .socials a:hover {
     color: var(--highlight-orange);
 }
+
 
